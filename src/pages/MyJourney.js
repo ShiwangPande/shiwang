@@ -4,7 +4,7 @@ function MyJourney() {
     return (
         <div className=''>
             <h1 className='text-center pt-10 '> <span className="text-3xl lg:text-5xl   tracking-normal  about"> My </span> <span className="text-3xl lg:text-5xl text-[#00e6e6]  tracking-normal about">Journey</span></h1>
-            <div className='coloums-1 lg:columns-2 w-[100vw] mx-5 lg:mx-40 my-14 '>
+            <div className='coloums-1 lg:columns-2 w-[100vw] mx-5 lg:mx-28 my-14 '>
                 <div className=''>
                     <h1 className='pb-5 text-3xl font-semibold'>Education </h1>
                     <div>

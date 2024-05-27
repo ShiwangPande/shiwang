@@ -4,7 +4,7 @@ function Skills() {
     return (
         <div className='bg-[#122e43] '>
             <h1 className='text-center pt-20 '> <span className="text-3xl lg:text-5xl   tracking-normal  about"> My </span> <span className="text-3xl lg:text-5xl text-[#00e6e6]  tracking-normal about">Skills</span></h1>
-            <div className='coloums-1 lg:columns-2 w-[100vw] mx-5 lg:mx-40 my-14 '>
+            <div className='coloums-1 lg:columns-2 w-[100vw] mx-5 lg:mx-28 my-14 '>
                 <div className=''>
                     <h1 className='pb-5 text-3xl font-semibold'>Coding Skills </h1>
                     <div class="mb-10 ms-4 max-w-xs	 lg:max-w-xl p-4 lg:p-6 bg-black/10 border border-[#00e6e6] bg-opacity-5 backdrop-blur-lg  rounded-lg shadow 0">
