@@ -31,10 +31,16 @@ function Home() {
     const handleShowMore = () => {
         router('/project');
     };
+    function download() {
+        window.open("https://drive.google.com/file/d/1W38cjtg4JWRvS9d5JhE0fq5HvfbXz8ob/view?usp=sharing")
+    }
+    function contact() {
+        router('https://www.linkedin.com/in/shiwang-pandey/');
+    }
 
     return (
         <div className="overflow-hidden	 ">
-            
+
             <div className="flex  h-[80vh] flex-col lg:flex-row	items-center justify-center  lg:gap-20 ">
                 <Profile className="overflow-hidden	" />
                 <div className="flex flex-col  gap-5 mx-10 lg:gap-8">
@@ -42,22 +48,22 @@ function Home() {
                         <span className="text-lg lg:text-3xl tracking-wider "> Hello, It's Me </span > <span className="text-2xl lg:text-5xl tracking-tracking-wider name font-sans"> Shiwang Pandey </span> <span className="text-2xl lg:text-5xl tracking-normal stack"> And I'm a <TypeWriter data={sentences} speed={180} pauseDelay={3000} /> </span>
                     </h1>
                     <div className="flex flex-row gap-7  justify-center lg:justify-normal  items-center  lg:items-start">
-                        <a href="" className="text-xl relative z-10  hover:scale-105" color="secondary" variant="ghost">
+                        <a href="https://www.linkedin.com/in/shiwang-pandey/" className="text-xl relative z-10  hover:scale-105" color="secondary" variant="ghost">
                             <img className="w-7 h-7 relative z-10" src={linkedin} alt="" />
                         </a>
-                        <a href="" className="text-xl" color="primary" variant="ghost">
+                        <a href="https://github.com/ShiwangPande" className="text-xl" color="primary" variant="ghost">
                             <img className="w-7 h-7 relative z-10 hover:scale-105" src={github} alt="" />
                         </a>
-                        <a href="" className="text-xl" color="primary" variant="ghost">
+                        <a href="https://x.com/Shiwang__Pandey" className="text-xl" color="primary" variant="ghost">
                             <img className="w-7 h-7 relative z-10 hover:scale-105" src={x} alt="" />
                         </a>
                     </div>
                     <div className="flex flex-row lg:gap-5 gap-3 items-center  lg:items-start">
-                        <Button className="text-xl text-black font-semibold bg-[#00e6e6] tracking-wider rounded-3xl p-6  border-3 border-[#033333] hover:bg-white hover:text-black hover:font-bolder" color="default" variant="ghost">
+                        <Button onClick={download} className="text-xl text-black font-semibold bg-[#00e6e6] tracking-wider rounded-3xl p-6  border-3 border-[#033333] hover:bg-white hover:text-black hover:font-bolder" color="default" variant="ghost">
                             Download  CV
                         </Button>
-                        <Button className="text-xl text-black font-semibold bg-[#00e6e6] tracking-wider rounded-3xl p-6  border-3 border-[#033333] hover:bg-white hover:text-black hover:font-bolder" color="default" variant="ghost" >
-                            Contact Me
+                        <Button onClick={contact} className="text-xl text-black font-semibold bg-[#00e6e6] tracking-wider rounded-3xl p-6  border-3 border-[#033333] hover:bg-white hover:text-black hover:font-bolder" color="default" variant="ghost" >
+                            Hire Me
                         </Button>
 
                     </div>
