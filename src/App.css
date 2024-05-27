@@ -63,7 +63,6 @@ h1 .about {
   font-family: "queenmedium";
   letter-spacing: 3px;
   height: 100%;
-  
 
   line-height: 50px;
 }
@@ -92,4 +91,18 @@ button {
   height: 25px;
   border-radius: 50%;
   background: #00e6e6;
+}
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #081b29; /* or any other color you prefer */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #00e6e6; /* Color for the scrollbar thumb */
+  border-radius: 6px;
+  border: 3px solid #081b29; /* Match the track color */
 }

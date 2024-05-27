@@ -1,7 +1,7 @@
-import { useState, useEffect } from "react";
+import { useEffect } from "react";
 import { useMotionValue, useSpring, frame } from "framer-motion";
 
-const spring = { damping: 7, stiffness: 40, restDelta: 0.1 };
+const spring = { damping: 10, stiffness: 80, restDelta: 0.1 };
 
 export function useFollowPointer(ref) {
   const xPoint = useMotionValue(0);
@@ -28,22 +28,6 @@ export function useFollowPointer(ref) {
 
     return () => window.removeEventListener("pointermove", handlePointerMove);
   }, [ref, xPoint, yPoint]);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      frame.update(() => {
-        const scrollX = window.scrollX || window.pageXOffset;
-        const scrollY = window.scrollY || window.pageYOffset;
-
-        xPoint.set(xPoint.get() + scrollX);
-        yPoint.set(yPoint.get() + scrollY);
-      });
-    };
-
-    window.addEventListener("scroll", handleScroll);
-
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, [xPoint, yPoint]);
 
   return { x, y };
 }

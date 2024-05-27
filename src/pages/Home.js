@@ -34,6 +34,7 @@ function Home() {
 
     return (
         <div className="overflow-hidden	 ">
+            
             <div className="flex  h-[80vh] flex-col lg:flex-row	items-center justify-center  lg:gap-20 ">
                 <Profile className="overflow-hidden	" />
                 <div className="flex flex-col  gap-5 mx-10 lg:gap-8">

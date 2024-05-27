@@ -21,10 +21,11 @@ function App() {
     <>
 
       <Router>
-        <motion.div ref={ref} className="box" style={{
-          x,
-          y,
-        }} />
+        <motion.div ref={ref} className="box"
+          style={{
+            x,
+            y,
+          }} />
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
