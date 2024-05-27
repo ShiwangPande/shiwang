@@ -35,7 +35,7 @@ function Home() {
         window.open("https://drive.google.com/file/d/1W38cjtg4JWRvS9d5JhE0fq5HvfbXz8ob/view?usp=sharing")
     }
     function contact() {
-        router('https://www.linkedin.com/in/shiwang-pandey/');
+        window.open('https://www.linkedin.com/in/shiwang-pandey/');
     }
 
     return (
