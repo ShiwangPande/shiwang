@@ -1,38 +1,95 @@
-.App {
-  text-align: center;
+body html {
+  overflow: auto;
+
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+body {
+  background-color: #081b29;
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+li p {
+  letter-spacing: 1px;
+  text-align: justify;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* add custom font using file */
+
+@font-face {
+  font-family: "raftwork";
+  src: url("./raftwork.otf");
+}
+
+@font-face {
+  font-family: "queenmedium";
+  src: url("./queenmedium.ttf");
+}
+@font-face {
+  font-family: "binomabold";
+  src: url("./binomabold.ttf");
+}
+@font-face {
+  font-family: "BinomaRegular";
+  src: url("./BinomaRegular.ttf");
+}
+@font-face {
+  font-family: "number";
+  src: url("./number.otf");
+}
+
+@font-face {
+  font-family: "kingsman";
+  src: url("./kingsman.ttf");
+} /* not so cool*/
+
+h1 {
+  font-family: "BinomaRegular";
+  font-weight: bold;
+}
+h1 .name {
+  font-family: "binomabold";
+  font-weight: bold;
+  letter-spacing: 3px;
+}
+h1 .about {
+  font-family: "binomabold";
+  font-weight: bolder;
+  letter-spacing: 3px;
+}
+.num {
+  font-family: "queenmedium";
+  letter-spacing: 3px;
+  height: 100%;
+  
+
+  line-height: 50px;
+}
+h1 .stack {
+  background: linear-gradient(180deg, #00e6e6, #00e6e6);
+  background-clip: text;
+  -webkit-background-clip: text;
+  font-family: "BinomaRegular";
+
+  font-weight: bold;
+  letter-spacing: -1px;
+  -webkit-text-fill-color: transparent;
+}
+
+button {
+  font-family: "binomabold";
+}
+
+.cursor {
+  color: white;
+}
+
+.box {
+  width: 25px;
+
+  height: 25px;
+  border-radius: 50%;
+  background: #00e6e6;
 }
