@@ -32,7 +32,7 @@ function Home() {
         router('/project');
     };
     function download() {
-        window.open("https://drive.google.com/file/d/1W38cjtg4JWRvS9d5JhE0fq5HvfbXz8ob/view?usp=sharing")
+        window.open("https://drive.google.com/file/d/18eQe64E-97uzrFXQX3O1S9S2mI4wSt9Y/view?usp=sharing")
     }
     function contact() {
         window.open('https://www.linkedin.com/in/shiwang-pandey/');
