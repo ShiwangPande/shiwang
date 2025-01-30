@@ -47,8 +47,6 @@ export function useFollowPointer(ref) {
                     // Apply accumulated scroll offsets
                     xPoint.set(xPoint.get() + accumulatedScrollX);
                     yPoint.set(yPoint.get() + accumulatedScrollY);
-
-                    // Reset accumulated scroll offsets
                     accumulatedScrollX = 0;
                     accumulatedScrollY = 0;
                 });

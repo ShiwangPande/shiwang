@@ -13,18 +13,20 @@ import Skills from './pages/Skills';
 import Contact from './pages/Contact';
 import Myproject from './pages/Myproject';
 import Footer from "./components/Footer"
+import Resume from './pages/Resume';
+
 function App() {
   const ref = useRef(null);
   const { x, y } = useFollowPointer(ref);
 
   return (
     <>
-
       <Router>
         <motion.div ref={ref} className="box"
           style={{
             x,
             y,
+            zIndex: -1 // Ensure the box is behind other elements
           }} />
         <Navbar />
         <Routes>
@@ -34,11 +36,11 @@ function App() {
           <Route path="/skills" element={<Skills />} />
           <Route path="/project" element={<Myproject />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/resume" element={<Resume />} />
         </Routes>
         <Footer />
       </Router>
     </>
-
   );
 }
 

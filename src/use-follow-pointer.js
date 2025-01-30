@@ -15,12 +15,22 @@ export function useFollowPointer(ref) {
     const handlePointerMove = ({ clientX, clientY }) => {
       const element = ref.current;
 
+      // Check if the pointer is over an interactive element
+      const target = document.elementFromPoint(clientX, clientY);
+      if (target && (target.tagName === 'BUTTON' || target.tagName === 'A' || target.tagName === 'INPUT' || target.tagName === 'TEXTAREA')) {
+        return;
+      }
+
       frame.update(() => {
         const scrollX = window.scrollX || window.pageXOffset;
         const scrollY = window.scrollY || window.pageYOffset;
 
-        xPoint.set(clientX - element.offsetLeft - element.offsetWidth / 2 + scrollX);
-        yPoint.set(clientY - element.offsetTop - element.offsetHeight / 2 + scrollY);
+        // Increase the offset to the box's position
+        const offsetX = 25; // Adjust this value as needed
+        const offsetY = 25; // Adjust this value as needed
+
+        xPoint.set(clientX - element.offsetLeft - element.offsetWidth / 2 + scrollX + offsetX);
+        yPoint.set(clientY - element.offsetTop - element.offsetHeight / 2 + scrollY + offsetY);
       });
     };
 

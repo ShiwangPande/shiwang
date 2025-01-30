@@ -19,13 +19,13 @@ function Home() {
         navigate('/about');
     }
     const router = useNavigate();
+    const url = 'https://res.cloudinary.com/dfgbr3v7a/image/upload/'
 
     const projects = [
-        { href: "https://kartmatch.vercel.app/", src: "https://i.postimg.cc/dV34sJRN/image.png", alt: "Kartmatch" },
-        { href: "https://rampupkolkata.vercel.app/", src: "https://i.postimg.cc/WzNBNQ1N/image.png", alt: "Ramp Up Kolkata" },
-        { href: "https://adoptdog.vercel.app/", src: "https://i.postimg.cc/L6YpJFV5/image.png", alt: "Pet Adoption" },
-        { href: "https://www.abhijitenterprises.co.in/", src: "https://i.postimg.cc/QCnK0ZBV/image.png", alt: "abhijit enterprises" },
-        { href: "https://ekstepapp.vercel.app/", src: "https://i.postimg.cc/zGdDhFgX/image.png", alt: "Ekstep" }
+        { href: "https://echowave.shiwang.tech/", src: `${url}v1738204644/c927969f-f26c-4390-af57-8a1df1959a34.png`, alt: "echowave" },
+        { href: "https://clashdeckpro.shiwang.tech/", src: `${url}v1738204012/132d3ce4-396c-43c1-b159-4828fe3ca93f.png`, alt: "clashdeckpro" },
+        { href: "https://vakyagen.vercel.app/", src: `${url}v1738204537/d4516ca3-79aa-4a5e-9eca-8fafa91db218.png`, alt: "vakyagen" },
+        { href: "https://kartmatch.in/", src: `${url}v1738202723/c35cc818-6a75-4f58-ad7b-07b1d3dead38.png`, alt: "Kartmatch" },
     ];
 
     const handleShowMore = () => {
@@ -59,7 +59,7 @@ function Home() {
                         </a>
                     </div>
                     <div className="flex flex-row lg:gap-5 gap-3 items-center  lg:items-start">
-                        <Button onClick={download} className="text-xl text-black font-semibold bg-[#00e6e6] tracking-wider rounded-3xl p-6  border-3 border-[#033333] hover:bg-white hover:text-black hover:font-bolder" color="default" variant="ghost">
+                        <Button onClick={navigate('resume')} className="text-xl text-black font-semibold bg-[#00e6e6] tracking-wider rounded-3xl p-6  border-3 border-[#033333] hover:bg-white hover:text-black hover:font-bolder" color="default" variant="ghost">
                             Download  CV
                         </Button>
                         <Button onClick={contact} className="text-xl text-black font-semibold bg-[#00e6e6] tracking-wider rounded-3xl p-6  border-3 border-[#033333] hover:bg-white hover:text-black hover:font-bolder" color="default" variant="ghost" >

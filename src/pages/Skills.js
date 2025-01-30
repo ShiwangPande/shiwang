@@ -60,9 +60,9 @@ function Skills() {
 
                             </li>
                             <li>
-                                <div class="mb-1 text-base flex justify-between font-medium dark:text-white"><span>Flutter, kotlin</span> <span>50%</span></div>
+                                <div class="mb-1 text-base flex justify-between font-medium dark:text-white"><span>Next.js</span> <span>80%</span></div>
                                 <div class="w-full bg-gray-200 rounded-full h-2.5 mb-4 dark:bg-gray-700">
-                                    <div class="bg-[#00e6e6] h-2.5 rounded-full " style={{ "width": "50%" }}></div>
+                                    <div class="bg-[#00e6e6] h-2.5 rounded-full " style={{ "width": "80%" }}></div>
                                 </div>
                             </li>
                             <li>
