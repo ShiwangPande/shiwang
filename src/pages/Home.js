@@ -59,7 +59,7 @@ function Home() {
                         </a>
                     </div>
                     <div className="flex flex-row lg:gap-5 gap-3 items-center  lg:items-start">
-                        <Button onClick={navigate('resume')} className="text-xl text-black font-semibold bg-[#00e6e6] tracking-wider rounded-3xl p-6  border-3 border-[#033333] hover:bg-white hover:text-black hover:font-bolder" color="default" variant="ghost">
+                        <Button onClick={router('resume')} className="text-xl text-black font-semibold bg-[#00e6e6] tracking-wider rounded-3xl p-6  border-3 border-[#033333] hover:bg-white hover:text-black hover:font-bolder" color="default" variant="ghost">
                             Download  CV
                         </Button>
                         <Button onClick={contact} className="text-xl text-black font-semibold bg-[#00e6e6] tracking-wider rounded-3xl p-6  border-3 border-[#033333] hover:bg-white hover:text-black hover:font-bolder" color="default" variant="ghost" >
