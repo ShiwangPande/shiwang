@@ -86,7 +86,7 @@ function Home() {
                         <div className="flex flex-col justify-center mx-5 items-center gap-5 lg:gap-5">
                             <h1 className="text-2xl  lg:text-2xl tracking-wider">Hello! I'm Shiwang Pandey and I'm a <TypeWriter data={sentences2} speed={180} pauseDelay={3000} /> </h1>
 
-                            <p className="text-lg lg:text-2xl lg:mx-32 text-justify  lg:text-center tracking-wider"> I'am known for crafting modular and scalable solutions. With a passion for code and a penchant for problem-solving, I excel in the realm of freelancing. From architecting robust back-end systems to creating seamless user experiences, I'm committed to delivering exceptional results on time, every time. Let's collaborate and bring your projects to life!</p>
+                            <p className="text-lg lg:text-2xl lg:mx-32 text-justify  lg:text-center tracking-wider"> I am a Mechanical Engineer with an interest in web development and IoT. My background in engineering has provided me with a strong analytical foundation, and I have been developing skills in Next.js, the MERN stack, Python, and C++. Currently, as a student seeking entry-level opportunities, I am eager to continue learning and contribute to projects in a collaborative environment. I approach challenges with a willingness to grow and a commitment to finding practical solutions.</p>
                             <Button onClick={handleClick} className="text-xl text-black font-semibold bg-[#00e6e6] tracking-wider rounded-3xl p-6  border-3 border-[#033333] hover:bg-white hover:text-black hover:font-bolder" color="default" variant="ghost">
                                 Read More
                             </Button>

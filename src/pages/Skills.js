@@ -1,163 +1,84 @@
-import React from 'react'
-import { Progress } from "@nextui-org/react";
+import React from 'react';
+
+const SkillBar = ({ name, percentage }) => {
+  return (
+    <li className="mb-6">
+      <div className="mb-1 flex justify-between text-base font-medium dark:text-white">
+        <span>{name}</span>
+        <span>{percentage}%</span>
+      </div>
+      <div className="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
+        <div className="bg-[#00e6e6] h-2.5 rounded-full" style={{ width: `${percentage}%` }}></div>
+      </div>
+    </li>
+  );
+};
+
 function Skills() {
-    return (
-        <div className='bg-[#122e43] '>
-            <h1 className='text-center pt-20 '> <span className="text-3xl lg:text-5xl   tracking-normal  about"> My </span> <span className="text-3xl lg:text-5xl text-[#00e6e6]  tracking-normal about">Skills</span></h1>
-            <div className='coloums-1 lg:columns-2 w-[100vw] mx-5 lg:mx-28 my-14 '>
-                <div className=''>
-                    <h1 className='pb-5 text-3xl font-semibold'>Coding Skills </h1>
-                    <div class="mb-10 ms-4 max-w-xs	 lg:max-w-xl p-4 lg:p-6 bg-black/10 border border-[#00e6e6] bg-opacity-5 backdrop-blur-lg  rounded-lg shadow 0">
-                        <ul>
-                            <li>
+  const codingSkills = [
+    { name: "HTML", percentage: 80 },
+    { name: "CSS", percentage: 75 },
+    { name: "JavaScript", percentage: 70 },
+    { name: "TypeScript", percentage: 65 },
+    { name: "React", percentage: 65 },
+    { name: "Next.js", percentage: 60 },
+    { name: "MongoDB", percentage: 60 },
+    { name: "Express.js", percentage: 55 },
+    { name: "Node.js", percentage: 60 },
+    { name: "Python", percentage: 55 },
+    { name: "Flask", percentage: 50 },
+    { name: "C/C++", percentage: 50 },
+    { name: "SQL/MySQL", percentage: 55 },
+    { name: "Linux", percentage: 60 },
+    { name: "Docker", percentage: 55 }
+  ];
 
-                                <div class="mb-1 text-base flex justify-between font-medium dark:text-white"> <span>HTML</span> <span>100%</span> </div>
-                                <div class="w-full bg-gray-200 rounded-full h-2.5 mb-4 dark:bg-gray-700">
-                                    <div class="bg-[#00e6e6] h-2.5 rounded-full " style={{ "width": "100%" }}></div>
-                                </div>
+  const professionalSkills = [
+    { name: "Web Development", percentage: 65 },
+    { name: "Frontend Development", percentage: 65 },
+    { name: "MERN Stack", percentage: 60 },
+    { name: "Backend Development", percentage: 55 },
+    { name: "Responsive Design", percentage: 70 },
+    { name: "Web Design", percentage: 60 },
+    { name: "IoT & Embedded Systems", percentage: 50 },
+    { name: "Design & Analysis", percentage: 50 },
+    { name: "Fusion 360", percentage: 55 },
+    { name: "Arduino Uno", percentage: 65 },
+    { name: "Raspberry Pi", percentage: 60 },
+    { name: "Simulation", percentage: 45 }
+  ];
 
-                            </li>
-                            <li>
-                                <div class="mb-1 text-base flex justify-between font-medium dark:text-white"> <span>CSS</span> <span>90%</span> </div>
-                                <div class="w-full bg-gray-200 rounded-full h-2.5 mb-4 dark:bg-gray-700">
-                                    <div class="bg-[#00e6e6] h-2.5 rounded-full " style={{ "width": "90%" }} ></div>
-                                </div>
-
-                            </li>
-                            <li>
-                                <div class="mb-1 text-base flex justify-between font-medium dark:text-white"><span>JavaScript</span> <span>80%</span></div>
-                                <div class="w-full bg-gray-200 rounded-full h-2.5 mb-4 dark:bg-gray-700">
-                                    <div class="bg-[#00e6e6] h-2.5 rounded-full " style={{ "width": "80%" }}></div>
-                                </div>
-
-
-                            </li>
-                            <li>
-                                <div class="mb-1 text-base flex justify-between font-medium dark:text-white"><span>React</span> <span>80%</span></div>
-                                <div class="w-full bg-gray-200 rounded-full h-2.5 mb-4 dark:bg-gray-700">
-                                    <div class="bg-[#00e6e6] h-2.5 rounded-full " style={{ "width": "80%" }}></div>
-                                </div>
-
-                            </li>
-                            <li>
-                                <div class="mb-1 text-base flex justify-between font-medium dark:text-white"><span>Bootstrap, Tailwind</span> <span>90%</span></div>
-                                <div class="w-full bg-gray-200 rounded-full h-2.5 mb-4 dark:bg-gray-700">
-                                    <div class="bg-[#00e6e6] h-2.5 rounded-full " style={{ "width": "90%" }}></div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="mb-1 text-base flex justify-between font-medium dark:text-white"><span>Python</span> <span>60%</span></div>
-                                <div class="w-full bg-gray-200 rounded-full h-2.5 mb-4 dark:bg-gray-700">
-                                    <div class="bg-[#00e6e6] h-2.5 rounded-full " style={{ "width": "60%" }}></div>
-                                </div>
-
-                            </li>
-                            <li>
-                                <div class="mb-1 text-base flex justify-between font-medium dark:text-white"><span>Express.js</span> <span>70%</span></div>
-                                <div class="w-full bg-gray-200 rounded-full h-2.5 mb-4 dark:bg-gray-700">
-                                    <div class="bg-[#00e6e6] h-2.5 rounded-full " style={{ "width": "70%" }}></div>
-                                </div>
-
-                            </li>
-                            <li>
-                                <div class="mb-1 text-base flex justify-between font-medium dark:text-white"><span>Next.js</span> <span>80%</span></div>
-                                <div class="w-full bg-gray-200 rounded-full h-2.5 mb-4 dark:bg-gray-700">
-                                    <div class="bg-[#00e6e6] h-2.5 rounded-full " style={{ "width": "80%" }}></div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="mb-1 text-base flex justify-between font-medium dark:text-white"><span>MongoDB, MySQL</span> <span>80%</span></div>
-                                <div class="w-full bg-gray-200 rounded-full h-2.5 mb-4 dark:bg-gray-700">
-                                    <div class="bg-[#00e6e6] h-2.5 rounded-full " style={{ "width": "80%" }}></div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="mb-1 text-base flex justify-between font-medium dark:text-white"><span>C/C++</span> <span>60%</span></div>
-                                <div class="w-full bg-gray-200 rounded-full h-2.5 mb-4 dark:bg-gray-700">
-                                    <div class="bg-[#00e6e6] h-2.5 rounded-full " style={{ "width": "60%" }}></div>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div className=''>
-                    <h1 className='pb-5 text-3xl font-semibold'>Professional Skils </h1>
-                    <div class="mb-10 ms-4 max-w-xs	 lg:max-w-xl p-4 lg:p-6 bg-black/10 border border-[#00e6e6] bg-opacity-5 backdrop-blur-lg  rounded-lg shadow 0">
-                        <ul>
-                            <li>
-
-                                <div class="mb-1 text-base flex justify-between font-medium dark:text-white"> <span>Web Design</span> <span>80%</span> </div>
-                                <div class="w-full bg-gray-200 rounded-full h-2.5 mb-4 dark:bg-gray-700">
-                                    <div class="bg-[#00e6e6] h-2.5 rounded-full " style={{ "width": "80%" }}></div>
-                                </div>
-
-                            </li>
-                            <li>
-                                <div class="mb-1 text-base flex justify-between font-medium dark:text-white"> <span>Web Development</span> <span>80%</span> </div>
-                                <div class="w-full bg-gray-200 rounded-full h-2.5 mb-4 dark:bg-gray-700">
-                                    <div class="bg-[#00e6e6] h-2.5 rounded-full " style={{ "width": "80%" }} ></div>
-                                </div>
-
-                            </li>
-                            <li>
-                                <div class="mb-1 text-base flex justify-between font-medium dark:text-white"><span>Frontend</span> <span>80%</span></div>
-                                <div class="w-full bg-gray-200 rounded-full h-2.5 mb-4 dark:bg-gray-700">
-                                    <div class="bg-[#00e6e6] h-2.5 rounded-full " style={{ "width": "80%" }}></div>
-                                </div>
-
-
-                            </li>
-                            <li>
-                                <div class="mb-1 text-base flex justify-between font-medium dark:text-white"><span>Backend</span> <span>70%</span></div>
-                                <div class="w-full bg-gray-200 rounded-full h-2.5 mb-4 dark:bg-gray-700">
-                                    <div class="bg-[#00e6e6] h-2.5 rounded-full " style={{ "width": "70%" }}></div>
-                                </div>
-
-                            </li>
-                            <li>
-                                <div class="mb-1 text-base flex justify-between font-medium dark:text-white"><span>Graphic Design</span> <span>90%</span></div>
-                                <div class="w-full bg-gray-200 rounded-full h-2.5 mb-4 dark:bg-gray-700">
-                                    <div class="bg-[#00e6e6] h-2.5 rounded-full " style={{ "width": "90%" }}></div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="mb-1 text-base flex justify-between font-medium dark:text-white"><span>Artifical Intelligence & Machine Learning</span> <span>50%</span></div>
-                                <div class="w-full bg-gray-200 rounded-full h-2.5 mb-4 dark:bg-gray-700">
-                                    <div class="bg-[#00e6e6] h-2.5 rounded-full " style={{ "width": "50%" }}></div>
-                                </div>
-
-                            </li>
-                            <li>
-                                <div class="mb-1 text-base flex justify-between font-medium dark:text-white"><span>Fusion 360 and Simualtion</span> <span>70%</span></div>
-                                <div class="w-full bg-gray-200 rounded-full h-2.5 mb-4 dark:bg-gray-700">
-                                    <div class="bg-[#00e6e6] h-2.5 rounded-full " style={{ "width": "70%" }}></div>
-                                </div>
-
-                            </li>
-                            <li>
-                                <div class="mb-1 text-base flex justify-between font-medium dark:text-white"><span>Design & Analysis</span> <span>70%</span></div>
-                                <div class="w-full bg-gray-200 rounded-full h-2.5 mb-4 dark:bg-gray-700">
-                                    <div class="bg-[#00e6e6] h-2.5 rounded-full " style={{ "width": "70%" }}></div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="mb-1 text-base flex justify-between font-medium dark:text-white"><span>Competitive Coding</span> <span>50%</span></div>
-                                <div class="w-full bg-gray-200 rounded-full h-2.5 mb-4 dark:bg-gray-700">
-                                    <div class="bg-[#00e6e6] h-2.5 rounded-full " style={{ "width": "50%" }}></div>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="mb-1 text-base flex justify-between font-medium dark:text-white"><span>Fabrication</span> <span>60%</span></div>
-                                <div class="w-full bg-gray-200 rounded-full h-2.5 mb-4 dark:bg-gray-700">
-                                    <div class="bg-[#00e6e6] h-2.5 rounded-full " style={{ "width": "60%" }}></div>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+  return (
+    <div className="bg-[#122e43] py-20">
+      <h1 className="text-center text-3xl lg:text-5xl tracking-normal mb-10 text-white">
+        My <span className="text-[#00e6e6]">Skills</span>
+      </h1>
+      <div className="max-w-screen-xl mx-auto px-5 grid grid-cols-1 lg:grid-cols-2 gap-10">
+        {/* Coding Skills */}
+        <div>
+          <h2 className="text-2xl font-semibold mb-5 text-white">Coding Skills</h2>
+          <div className="p-6 bg-black/10 border border-[#00e6e6] rounded-lg shadow backdrop-blur-lg">
+            <ul className="max-h-[450px] overflow-y-auto pr-2">
+              {codingSkills.map((skill, index) => (
+                <SkillBar key={index} name={skill.name} percentage={skill.percentage} />
+              ))}
+            </ul>
+          </div>
         </div>
-    )
+        {/* Professional Skills */}
+        <div>
+          <h2 className="text-2xl font-semibold mb-5 text-white">Professional Skills</h2>
+          <div className="p-6 bg-black/10 border border-[#00e6e6] rounded-lg shadow backdrop-blur-lg">
+            <ul className="max-h-[450px] overflow-y-auto pr-2">
+              {professionalSkills.map((skill, index) => (
+                <SkillBar key={index} name={skill.name} percentage={skill.percentage} />
+              ))}
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
 }
 
-export default Skills
+export default Skills;

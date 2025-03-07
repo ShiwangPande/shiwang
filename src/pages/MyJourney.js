@@ -10,12 +10,12 @@ function MyJourney() {
                     <div>
 
                         <ol class="relative border-s border-[#00e6e6] dark:border-gray-700">
-                            <div class="absolute w-3 h-3 bg-[#00e6e6]  rounded-full mt-1.5 -start-1.5 border border-[#00e6e6] "></div>
+                        <div class="absolute w-3 h-3 bg-[#00e6e6]  rounded-full mt-1.5 -start-1.5 border border-[#00e6e6] "></div>
                             <li class="mb-10 ms-4 max-w-xs	 lg:max-w-xl p-4 lg:p-6 bg-black/10 border border-[#00e6e6] bg-opacity-5 backdrop-blur-lg  rounded-lg shadow 0">
-                                <h3 class="text-lg font-semibold text-white ">Suyash Convent School</h3>
-                                <time class="mb-1 text-sm font-normal leading-none text-[#00e6e6] ">2009-2019</time>
-                                <p class="mb-4 text-base font-normal  text-gray-200 ">I completed my schooling from 1st to 10th class at Suyash Convent School, following the Maharashtra State Board SSC curriculum. I consistently worked hard and excelled in my studies, achieving 86% in my SSC exams. This strong foundation has prepared me well for further academic pursuits.</p>
-                            
+                                <h3 class="text-lg font-semibold text-white ">Government College Of Engineering Nagpur</h3>
+                                <time class="mb-1 text-sm font-normal leading-none text-[#00e6e6] ">2021-2025</time>
+                                <p class="mb-4 text-base font-normal text-gray-200 ">I am currently pursuing my engineering degree in Mechanical Engineering from Government College of Engineering, Nagpur. My program is set to conclude with the 2025 batch. This education is providing me with comprehensive knowledge and skills in the field of mechanical engineering.</p>
+                           
                             </li>
                             <div class="absolute w-3 h-3 bg-[#00e6e6]  rounded-full mt-1.5 -start-1.5 border border-[#00e6e6] "></div>
                             <li class="mb-10 ms-4 max-w-xs	 lg:max-w-xl p-4 lg:p-6 bg-black/10 border border-[#00e6e6] bg-opacity-5 backdrop-blur-lg  rounded-lg shadow 0">
@@ -26,11 +26,13 @@ function MyJourney() {
                             </li>
                             <div class="absolute w-3 h-3 bg-[#00e6e6]  rounded-full mt-1.5 -start-1.5 border border-[#00e6e6] "></div>
                             <li class="mb-10 ms-4 max-w-xs	 lg:max-w-xl p-4 lg:p-6 bg-black/10 border border-[#00e6e6] bg-opacity-5 backdrop-blur-lg  rounded-lg shadow 0">
-                                <h3 class="text-lg font-semibold text-white ">Government College Of Engineering Nagpur</h3>
-                                <time class="mb-1 text-sm font-normal leading-none text-[#00e6e6] ">2021-2025</time>
-                                <p class="mb-4 text-base font-normal text-gray-200 ">I am currently pursuing my engineering degree in Mechanical Engineering from Government College of Engineering, Nagpur. My program is set to conclude with the 2025 batch. This education is providing me with comprehensive knowledge and skills in the field of mechanical engineering.</p>
-                           
+                                <h3 class="text-lg font-semibold text-white ">Suyash Convent School</h3>
+                                <time class="mb-1 text-sm font-normal leading-none text-[#00e6e6] ">2009-2019</time>
+                                <p class="mb-4 text-base font-normal  text-gray-200 ">I completed my schooling from 1st to 10th class at Suyash Convent School, following the Maharashtra State Board SSC curriculum. I consistently worked hard and excelled in my studies, achieving 86% in my SSC exams. This strong foundation has prepared me well for further academic pursuits.</p>
+                            
                             </li>
+                          
+                          
 
                         </ol>
 
@@ -42,26 +44,23 @@ function MyJourney() {
                     <div>
 
                         <ol class="relative border-s border-[#00e6e6] dark:border-gray-700">
-                            <div class="absolute w-3 h-3 bg-[#00e6e6]  rounded-full mt-1.5 -start-1.5 border border-[#00e6e6] "></div>
+                        <div class="absolute w-3 h-3 bg-[#00e6e6]  rounded-full mt-1.5 -start-1.5 border border-[#00e6e6] "></div>
                             <li class="mb-10 ms-4 max-w-xs	 lg:max-w-xl p-4 lg:p-6 bg-black/10 border border-[#00e6e6] bg-opacity-5 backdrop-blur-lg  rounded-lg shadow 0">
-                                <h3 class="text-lg font-semibold text-white ">Internship at Txon</h3>
-                                <time class="mb-1 text-sm font-normal leading-none text-[#00e6e6] ">Intern as Web Designer | 3 March, 2023</time>
+                                <h3 class="text-lg font-semibold text-white ">Internship  at OrbitSys Consultancy Pvt. Ltd.</h3>
+                                <time class="mb-1 text-sm font-normal leading-none text-[#00e6e6] ">Intern as a Software Intern | 1st June 2024 to 30th July 2024</time>
                                 <p class="mb-4 text-base font-normal text-gray-200 ">
                                     <li>
-                                        <p>My first task was to create an HTML Tutorial website.</p>
+                                        <p>During my internship, I developed a website and mobile application that will soon be utilized by countless users.</p>
                                     </li>
                                     <li>
-                                        <p>My second task was to create a CSS Tutorial website.</p>
+                                        <p>It’s been an incredible experience, and I’m excited to apply my learnings to future projects.</p>
                                     </li>
                                     <li>
-                                        <p>My third task was to create a JSTutorial website.</p>
+                                        <p>My Certificate :- <a href="https://res.cloudinary.com/dfgbr3v7a/image/upload/v1741365861/certificate_ybmdof.jpg" className='text-[#00e6e6]'>  Link </a></p>
                                     </li>
-                                    <li>
-                                        <p>My project at TXON:- <a href="https://www.linkedin.com/posts/shiwang-pandey_webdevelopment-webdesign-internship-activity-7049822268809523200-klcX?utm_source=combined_share_message&utm_medium=member_desktop" className='text-[#00e6e6]'> Homepage </a></p>
-                                    </li>
-
                                 </p>
-                                <a href="https://website-tutorial.vercel.app/" class="inline-flex items-center px-4 py-2 text-sm font-medium text-gray-900 bg-[#00e6e6] border border-[#00e6e6] rounded-lg hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:outline-none focus:ring-gray-100 focus:text-blue-700 dark:bg-gray-800  dark:border-gray-600 dark:hover:text-[#00e6e6] dark:hover:bg-gray-700 dark:focus:ring-gray-700">Learn More <svg class="w-3 h-3 ms-2 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                                
+                                <a href="https://www.linkedin.com/posts/shiwang-pandey_internship-softwareintern-orbitsys-activity-7224746955157987328--sWU?utm_source=share&utm_medium=member_desktop&rcm=ACoAADfMsd4ButU3MKvKyp1BTqPv6UHrURqhH_Q" target='_blank' class="inline-flex items-center px-4 py-2 text-sm font-medium text-gray-900 bg-[#00e6e6] border border-[#00e6e6] rounded-lg hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:outline-none focus:ring-gray-100 focus:text-blue-700 dark:bg-gray-800  dark:border-gray-600 dark:hover:text-[#00e6e6] dark:hover:bg-gray-700 dark:focus:ring-gray-700" rel="noreferrer">Learn more <svg class="w-3 h-3 ms-2 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
                                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
                                 </svg></a>
                             </li>
@@ -93,24 +92,29 @@ function MyJourney() {
                             </li>
                             <div class="absolute w-3 h-3 bg-[#00e6e6]  rounded-full mt-1.5 -start-1.5 border border-[#00e6e6] "></div>
                             <li class="mb-10 ms-4 max-w-xs	 lg:max-w-xl p-4 lg:p-6 bg-black/10 border border-[#00e6e6] bg-opacity-5 backdrop-blur-lg  rounded-lg shadow 0">
-                                <h3 class="text-lg font-semibold text-white ">Internship at Oasis Infobyte</h3>
-                                <time class="mb-1 text-sm font-normal leading-none text-[#00e6e6] ">Intern as Full stack developer | 1 April, 2023</time>
+                                <h3 class="text-lg font-semibold text-white ">Internship at Txon</h3>
+                                <time class="mb-1 text-sm font-normal leading-none text-[#00e6e6] ">Intern as Web Designer | 3 March, 2023</time>
                                 <p class="mb-4 text-base font-normal text-gray-200 ">
                                     <li>
-                                        <p>My task was to make Pizza delivery App</p>
+                                        <p>My first task was to create an HTML Tutorial website.</p>
                                     </li>
                                     <li>
-                                        <p>My second task was to make a Gold
-                                            Price Prediction App.</p>
+                                        <p>My second task was to create a CSS Tutorial website.</p>
                                     </li>
                                     <li>
-                                        <p>My project :- <a href="https://github.com/ShiwangPande/oasis-inforbyte-app" className='text-[#00e6e6]'>  Link </a></p>
+                                        <p>My third task was to create a JSTutorial website.</p>
                                     </li>
+                                    <li>
+                                        <p>My project at TXON:- <a href="https://www.linkedin.com/posts/shiwang-pandey_webdevelopment-webdesign-internship-activity-7049822268809523200-klcX?utm_source=combined_share_message&utm_medium=member_desktop" className='text-[#00e6e6]'> Homepage </a></p>
+                                    </li>
+
                                 </p>
-                                <a href="https://www.linkedin.com/posts/shiwang-pandey_intern-activity-7056153823475605504--oos?utm_source=combined_share_message&utm_medium=member_desktop" class="inline-flex items-center px-4 py-2 text-sm font-medium text-gray-900 bg-[#00e6e6] border border-[#00e6e6] rounded-lg hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:outline-none focus:ring-gray-100 focus:text-blue-700 dark:bg-gray-800  dark:border-gray-600 dark:hover:text-[#00e6e6] dark:hover:bg-gray-700 dark:focus:ring-gray-700">Learn more <svg class="w-3 h-3 ms-2 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+                                <a href="https://website-tutorial.vercel.app/" class="inline-flex items-center px-4 py-2 text-sm font-medium text-gray-900 bg-[#00e6e6] border border-[#00e6e6] rounded-lg hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:outline-none focus:ring-gray-100 focus:text-blue-700 dark:bg-gray-800  dark:border-gray-600 dark:hover:text-[#00e6e6] dark:hover:bg-gray-700 dark:focus:ring-gray-700">Learn More <svg class="w-3 h-3 ms-2 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
                                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9" />
                                 </svg></a>
                             </li>
+                            
+                          
                         </ol>
 
 

@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 220 220" preserveAspectRatio="none">
+  <defs>
+    <linearGradient id="grad3" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#081b29"/>
+      <stop offset="100%" stop-color="#122e43"/>
+    </linearGradient>
+    <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#000" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <!-- Hexagon that fills the viewBox -->
+  <polygon points="220,110 165,205 55,205 0,110 55,15 165,15" fill="url(#grad3)" filter="url(#shadow)"/>
+  <!-- Centered monogram text with increased size -->
+  <text x="110" y="110" text-anchor="middle" dominant-baseline="middle" fill="white" font-size="96" font-family="Montserrat, sans-serif" font-weight="bold">
+    SP
+  </text>
+</svg>
