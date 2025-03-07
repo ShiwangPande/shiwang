@@ -12,8 +12,9 @@ import MyJourney from './pages/MyJourney';
 import Skills from './pages/Skills';
 import Contact from './pages/Contact';
 import Myproject from './pages/Myproject';
-import Footer from "./components/Footer"
+import Footer from "./components/Footer";
 import Resume from './pages/Resume';
+import { Analytics } from '@vercel/analytics/react';
 
 function App() {
   const ref = useRef(null);
@@ -22,12 +23,15 @@ function App() {
   return (
     <>
       <Router>
-        <motion.div ref={ref} className="box"
+        <motion.div 
+          ref={ref} 
+          className="box"
           style={{
             x,
             y,
             zIndex: -1 // Ensure the box is behind other elements
-          }} />
+          }} 
+        />
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
@@ -39,6 +43,7 @@ function App() {
           <Route path="/resume" element={<Resume />} />
         </Routes>
         <Footer />
+        <Analytics />
       </Router>
     </>
   );
